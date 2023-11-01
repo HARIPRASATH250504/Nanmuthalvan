@@ -145,9 +145,11 @@ D types: float64(3), int64(3), object(3)
 memory usage: 58.7+ KB 
 Checking how numbers correlate
 sns.pairplot(df)
+![image](https://github.com/HARIPRASATH250504/Nanmuthalvan/assets/146343467/0c5e592e-5de1-4b24-a117-34fc39f05355)
 
 <seaborn.axisgrid.PairGrid at 0x336aeef8>
- 
+ ![image](https://github.com/HARIPRASATH250504/Nanmuthalvan/assets/146343467/834da68d-5f28-4008-bb35-391282d83c79)
+
 sns.pairplot(df, hue='rating')
 
 <seaborn.axisgrid.PairGrid at 0x3876cd18>
@@ -159,9 +161,9 @@ sns.heatmap(cor, annot=True, cmap='coolwarm')
 plt.ylim()
 
 (6.0, 0.0)
- 
+![image](https://github.com/HARIPRASATH250504/Nanmuthalvan/assets/146343467/f1b7f8b5-6bd6-480c-b948-f43d2bbb61de)
 
-Feature Engineering
+ Feature Engineering
 Df
 df[["genre_1","genre_2","genre_3"]] = df['genre'].str.split(',', n = 3, expand=True)
 df = df.drop(['genre'], axis=1)
@@ -195,8 +197,9 @@ sns.heatmap(cor, annot=True, cmap='coolwarm')
 plt.ylim()
 
 (21.0, 0.0)
- 
-Removing unwanted columns for model training
+![image](https://github.com/HARIPRASATH250504/Nanmuthalvan/assets/146343467/abcade4f-ae14-4c3f-9af3-e05ad5d6d970)
+
+ Removing unwanted columns for model training
 df.info()
 
 <class 'pandas.core.frame.DataFrame'>
@@ -346,4 +349,4 @@ print('Accuracy of the model is',accuracy*100,'%')
 
 Accuracy of the model is 59.742573708014255 %
 
- 
+
